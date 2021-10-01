@@ -124,3 +124,37 @@ public class ExpressionSolver {
 }
 
 
+
+//(c) A+ Computer Science
+//www.apluscompsci.com
+//Name -
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import static java.lang.Integer.*;
+import static java.lang.System.*;
+
+public class ExpressionSolverRunner {
+	public static void main(String args[]) {
+		String input1 = "3 + 5";
+		String input2 = "3 * 5";
+		String input3 = "3 - 5";
+		String input4 = "3 / 5";
+		String input5 = "5 / 5 * 2 + 8 / 2 + 5";
+		String input6 = "5 * 5 + 2 / 2 - 8 + 5 * 5 – 2";
+		ExpressionSolver s = new ExpressionSolver();
+		ExpressionSolver d = new ExpressionSolver();
+		ExpressionSolver f = new ExpressionSolver();
+		ExpressionSolver g = new ExpressionSolver();
+		ExpressionSolver h = new ExpressionSolver();
+		ExpressionSolver j = new ExpressionSolver();
+		System.out.println(input1 + " = " + s.solveExpression(input1));
+		System.out.println(input2 + " = " + d.solveExpression(input2));
+		System.out.println(input3 + " = " + f.solveExpression(input3));
+		System.out.println(input4 + " = " + g.solveExpression(input4));
+		System.out.println(input5 + " = " + h.solveExpression(input5));
+		System.out.println(input6 + " = " + j.solveExpression(input6));
+
+	}
+}
+
